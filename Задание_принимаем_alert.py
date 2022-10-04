@@ -5,17 +5,17 @@ import time
 import os
 
 
-#Открыть страницу
+#РћС‚РєСЂС‹С‚СЊ СЃС‚СЂР°РЅРёС†Сѓ
 link = "http://suninjuly.github.io/alert_accept.html"
 browser = webdriver.Chrome() 
 browser.get(link)
 
 
-#Нажать на кнопку
+#РќР°Р¶Р°С‚СЊ РЅР° РєРЅРѕРїРєСѓ
 button = browser.find_element(By.CSS_SELECTOR, "button.btn")
 button.click()
 
-#Принять confirm
+#РџСЂРёРЅСЏС‚СЊ confirm
 confirm = browser.switch_to.alert
 confirm.accept()
 
@@ -34,8 +34,8 @@ button.click()
 
 
 
-# Проверяем, что смогли зарегистрироваться
-# ждем загрузки страницы
+# РџСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ СЃРјРѕРіР»Рё Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ
+# Р¶РґРµРј Р·Р°РіСЂСѓР·РєРё СЃС‚СЂР°РЅРёС†С‹
 time.sleep(10)
 
 
